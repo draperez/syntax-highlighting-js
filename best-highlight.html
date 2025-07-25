@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Highlight</title>
+<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/best-highlight@latest/dist/themes/github.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/best-highlight@latest/dist/browser/index.global.js"></script>
+  
+</head>
+<body>
+    <a href="index.html">Back to Index</a>
+    <ul>
+        <li>Python: 
+<pre data-language="python" id="python-code">def hello_world():
+    print("Hello, World!")
+
+if __name__ == "__main__":
+    hello_world()</pre>
+        </li>
+        <li>CSS: <pre data-language="css">:root {
+    --primary: #3a6df0;
+    --primary-light: #5884ff;
+    --accent: #ff5722;
+    --dark: #1e2342;
+    --gain: #00c853;
+    --loss: #f44336;
+    --bg: #f9faff;
+    --card-bg: #ffffff;
+    --text: #1a2037;
+    --text-secondary: #6e7794;
+    --border: #e0e6fd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+}</pre></li>
+    <li>Bash: <pre data-language="bash"> <!-- class is optional: language-bash -->
+$ sudo apt install whatever
+┬─[aperez@aperez-2024:~]─[15:18:04]
+╰─>$ gemini -y -p "How can i create my own tailwind 4.1 theme so I can use it afterwards in any web application?"
+
+    </pre></li>
+        <li>HTML: <pre data-language="html" id="html-code"> <!-- class is optional: language-html -->
+        </pre></li>
+    </ul>
+
+    <script>
+        // Add HTML code dynamically
+        document.getElementById('html-code').textContent = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+`;
+    </script>
+    <script type="module">
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('pre[data-language]').forEach((el) => {
+                bestHighlight.highlightElement(el);
+            });
+        });
+    </script>
+</body>
+</html>

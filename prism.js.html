@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prism.js</title>
+	<link href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+    <link rel="icon" href="https://prismjs.com/assets/logo.svg">
+</head>
+<body>
+
+    <a href="index.html">Back to Index</a>
+    <ul>
+        <li>Python: <pre>
+<code class="language-python">def hello_world():
+    print("Hello, World!")
+
+if __name__ == "__main__":
+    hello_world()
+</code></pre>
+        </li>
+
+        <li>CSS: <pre>
+<code class="language-css">:root {
+    --primary: #3a6df0;
+    --primary-light: #5884ff;
+    --accent: #ff5722;
+    --dark: #1e2342;
+    --gain: #00c853;
+    --loss: #f44336;
+    --bg: #f9faff;
+    --card-bg: #ffffff;
+    --text: #1a2037;
+    --text-secondary: #6e7794;
+    --border: #e0e6fd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+}</code></pre>
+        </li>
+
+        <li>Bash: <pre>
+<code class="language-bash">$ sudo apt install whatever
+┬─[aperez@aperez-2024:~]─[15:18:04]
+╰─>$ gemini -y -p "How can i create my own tailwind 4.1 theme so I can use it afterwards in any web application?"</code></pre>
+        </li>
+        <li>HTML: <pre><code class="language-html" id="html-code"></code></pre></li>
+    </ul>
+    <script>
+        // Add HTML code dynamically
+        document.getElementById('html-code').textContent = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+`;
+    </script>
+    <!-- Load Prism.js -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</body>
+</html>
